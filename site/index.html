@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vão Arquitetura · Estúdio de arquitetura (demonstração)</title>
+<meta name="description" content="Vão é um estúdio de arquitetura fictício: casas, bibliotecas e praças desenhadas com calma. Site de demonstração com marca e dados inventados.">
+<meta name="theme-color" content="#efece5">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<a class="pular" href="#projetos">Pular para os projetos</a>
+<div class="malha" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<header class="topo" id="topo">
+  <a class="marca" href="#inicio" aria-label="Vão Arquitetura, início">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 36V4h8v32M28 36V4h8v32" /><path class="vao-marca" d="M12 20h16" /></svg>
+    <span>vão</span>
+  </a>
+  <nav aria-label="Principal">
+    <a href="#projetos">Projetos</a>
+    <a href="#estudio">Estúdio</a>
+    <a href="#processo">Processo</a>
+    <a href="#contato" class="nav-cta">Contato</a>
+  </nav>
+</header>
+
+<main id="inicio">
+  <section class="hero" aria-labelledby="h-hero">
+    <p class="rotulo hero-meta"><span>Estúdio de arquitetura</span><span>Curitiba · 25°25′S 49°16′O</span></p>
+    <h1 id="h-hero">
+      <span class="linha"><span>Desenhamos</span></span>
+      <span class="linha"><span>o <em>vazio</em></span></span>
+      <span class="linha"><span>entre as paredes.</span></span>
+    </h1>
+    <div class="hero-desenho" id="hero-desenho" role="presentation"></div>
+    <div class="hero-pe">
+      <p>Casas, bibliotecas e praças pensadas devagar, com luz, sombra e o tempo de quem vai morar ali.</p>
+      <a class="rolar" href="#projetos"><span>Ver obras</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 14l7 7 7-7"/></svg></a>
+    </div>
+  </section>
+
+  <section class="manifesto" aria-labelledby="h-manifesto">
+    <h2 class="rotulo" id="h-manifesto">01 — Manifesto</h2>
+    <p class="manifesto-texto" id="manifesto">Acreditamos que a melhor parede é a que não precisa existir. Começamos pelo que fica entre as coisas: o corredor que vira sala, a sombra que vira varanda, o vazio que vira lugar. O resto é construção.</p>
+  </section>
+
+  <section class="projetos" id="projetos" aria-labelledby="h-projetos">
+    <div class="sec-cab">
+      <h2 class="rotulo" id="h-projetos">02 — Projetos selecionados</h2>
+      <div class="filtros" role="group" aria-label="Filtrar projetos por tipo" id="filtros"></div>
+    </div>
+    <p class="contagem" id="contagem" aria-live="polite"></p>
+    <ul class="grade-projetos" id="grade"></ul>
+  </section>
+
+  <section class="estudio" id="estudio" aria-labelledby="h-estudio">
+    <h2 class="rotulo" id="h-estudio">03 — O estúdio</h2>
+    <div class="estudio-corpo">
+      <p class="estudio-titulo">Quatro arquitetos, uma mesa grande e nenhuma pressa em acertar na primeira vez.</p>
+      <dl class="numeros">
+        <div><dt>Fundado em</dt><dd><span>2009</span></dd></div>
+        <div><dt>Obras entregues</dt><dd><span data-conta="38">38</span></dd></div>
+        <div><dt>m² construídos</dt><dd><span data-conta="41200">41.200</span></dd></div>
+        <div><dt>Prêmios de bairro</dt><dd><span data-conta="14">14</span></dd></div>
+      </dl>
+    </div>
+    <ol class="principios">
+      <li><span class="num">I</span><h3>Luz antes de forma</h3><p>Cada projeto começa por um estudo de sol ao longo do ano. A forma vem depois, como consequência.</p></li>
+      <li><span class="num">II</span><h3>Material honesto</h3><p>Concreto, madeira, cerâmica e cal aparecem como são. Menos acabamento, mais verdade.</p></li>
+      <li><span class="num">III</span><h3>Obra acompanhada</h3><p>Visitamos o canteiro toda semana. Desenho que ninguém confere na obra vira sugestão.</p></li>
+    </ol>
+    <ul class="equipe" aria-label="Equipe">
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="38"/><text x="40" y="49" text-anchor="middle">HM</text></svg><b>Helena Moura</b><span>Sócia, arquiteta</span></li>
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="38"/><text x="40" y="49" text-anchor="middle">TA</text></svg><b>Tomás Aguiar</b><span>Sócio, urbanista</span></li>
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="38"/><text x="40" y="49" text-anchor="middle">IK</text></svg><b>Ieda Kato</b><span>Paisagismo e luz</span></li>
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="38"/><text x="40" y="49" text-anchor="middle">RB</text></svg><b>Rui Bastos</b><span>Obra e orçamento</span></li>
+    </ul>
+  </section>
+
+  <section class="processo" id="processo" aria-labelledby="h-processo">
+    <h2 class="rotulo" id="h-processo">04 — Processo</h2>
+    <div class="processo-corpo">
+      <div class="processo-passos" role="tablist" aria-label="Etapas do processo">
+        <button role="tab" id="t1" aria-selected="true" aria-controls="p1" data-etapa="1"><span>01</span>Conversa e terreno</button>
+        <button role="tab" id="t2" aria-selected="false" aria-controls="p1" data-etapa="2" tabindex="-1"><span>02</span>Estudo preliminar</button>
+        <button role="tab" id="t3" aria-selected="false" aria-controls="p1" data-etapa="3" tabindex="-1"><span>03</span>Projeto executivo</button>
+        <button role="tab" id="t4" aria-selected="false" aria-controls="p1" data-etapa="4" tabindex="-1"><span>04</span>Obra</button>
+      </div>
+      <div class="processo-painel" id="p1" role="tabpanel" aria-labelledby="t1">
+        <svg class="etapa-desenho" id="etapa-svg" viewBox="0 0 400 260" role="img" aria-label="Desenho que evolui a cada etapa: terreno, volumes, planta e obra">
+          <g class="e1"><path d="M30 220 L200 240 L370 200 L330 60 L70 40 Z" class="terreno"/><path d="M200 240 L200 30" class="norte"/><text x="206" y="30">N</text><circle cx="120" cy="120" r="14" class="arvore"/><circle cx="290" cy="150" r="10" class="arvore"/></g>
+          <g class="e2"><rect x="120" y="100" width="120" height="70" class="massa"/><rect x="200" y="140" width="90" height="50" class="massa m2"/></g>
+          <g class="e3"><path d="M120 135h120M180 100v70M200 165h90M245 140v50" class="corte"/><path d="M120 100h120v70H120z M200 140h90v50h-90z" class="parede-e"/></g>
+          <g class="e4"><path d="M110 200h200" class="andaime"/><path d="M120 200V90M240 200V90M290 200V130M120 90h120" class="andaime"/><circle cx="330" cy="80" r="10" class="sol"/></g>
+        </svg>
+        <div class="etapa-texto" id="etapa-texto" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato" aria-labelledby="h-contato">
+    <h2 class="rotulo" id="h-contato">05 — Contato</h2>
+    <div class="contato-corpo">
+      <div class="contato-texto">
+        <p class="contato-titulo">Tem um terreno, uma ideia ou só uma vontade?</p>
+        <address>
+          Rua das Figueiras, 214 · Água Verde<br>
+          Curitiba, PR (endereço fictício)<br>
+          <span class="rotulo">Demonstração: nada é enviado de verdade.</span>
+        </address>
+      </div>
+      <form id="form" novalidate aria-labelledby="h-contato">
+        <div class="campo"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" aria-describedby="erro-nome"><p class="erro" id="erro-nome" role="alert"></p></div>
+        <div class="campo"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="erro-email"><p class="erro" id="erro-email" role="alert"></p></div>
+        <div class="campo"><label for="telefone">Telefone <small>(opcional)</small></label><input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="erro-telefone"><p class="erro" id="erro-telefone" role="alert"></p></div>
+        <div class="campo"><label for="area">Área aproximada em m² <small>(opcional)</small></label><input id="area" name="area" inputmode="decimal" aria-describedby="erro-area"><p class="erro" id="erro-area" role="alert"></p></div>
+        <div class="campo cheio"><label for="tipo">Tipo de projeto</label>
+          <select id="tipo" name="tipo" aria-describedby="erro-tipo"><option value="">Escolha…</option><option>Casa nova</option><option>Reforma</option><option>Comercial</option><option>Urbano ou paisagismo</option></select><p class="erro" id="erro-tipo" role="alert"></p></div>
+        <div class="campo cheio"><label for="mensagem">Conte sobre o projeto</label><textarea id="mensagem" name="mensagem" rows="5" aria-describedby="erro-mensagem contador"></textarea><p class="contador" id="contador">0 / 1200</p><p class="erro" id="erro-mensagem" role="alert"></p></div>
+        <div class="campo cheio aceite"><label class="marca-check"><input type="checkbox" id="aceite" name="aceite" aria-describedby="erro-aceite"><span class="caixa" aria-hidden="true"></span><span>Concordo em receber uma resposta por e-mail (demonstração, nada é guardado).</span></label><p class="erro" id="erro-aceite" role="alert"></p></div>
+        <div class="cheio"><button class="botao" type="submit"><span>Enviar mensagem</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button></div>
+        <p class="resumo-erros" id="resumo-erros" role="alert" tabindex="-1" hidden></p>
+      </form>
+      <div class="enviado" id="enviado" hidden tabindex="-1">
+        <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36" pathLength="1"/><path d="M24 41l11 11 21-24" pathLength="1"/></svg>
+        <h3>Mensagem recebida (de mentira).</h3>
+        <p id="enviado-texto"></p>
+        <button class="botao claro" type="button" id="novo">Escrever outra</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p class="rodape-grande" aria-hidden="true">vão</p>
+  <p>Vão Arquitetura é um estúdio fictício. Site de demonstração por <a href="https://luizrenato.dev" target="_blank" rel="noopener">Luiz Renato</a>. Marca, projetos e pessoas são inventados.</p>
+</footer>
+
+<div class="detalhe" id="detalhe" role="dialog" aria-modal="true" aria-labelledby="d-nome" hidden>
+  <div class="detalhe-barra">
+    <button class="voltar" id="d-fechar" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"/></svg>Todos os projetos</button>
+    <span class="rotulo" id="d-indice"></span>
+  </div>
+  <div class="detalhe-corpo">
+    <figure class="detalhe-fig" id="d-fig">
+      <div class="alternar" role="group" aria-label="Tipo de desenho"><button type="button" aria-pressed="true" data-vista="volume">Volume</button><button type="button" aria-pressed="false" data-vista="planta">Planta</button></div>
+      <div class="d-desenho" id="d-desenho"></div>
+    </figure>
+    <div class="detalhe-info">
+      <p class="rotulo" id="d-meta"></p>
+      <h2 id="d-nome"></h2>
+      <p class="d-resumo" id="d-resumo"></p>
+      <p id="d-texto"></p>
+      <dl class="ficha" id="d-ficha"></dl>
+      <nav class="d-nav" aria-label="Outros projetos"><a href="#" id="d-ant"></a><a href="#" id="d-prox"></a></nav>
+    </div>
+  </div>
+</div>
+<script type="module" src="js/app.js"></script>
+<noscript><p style="padding:1rem;text-align:center">Este site usa JavaScript para a galeria e o formulário.</p></noscript>
+</body>
+</html>
